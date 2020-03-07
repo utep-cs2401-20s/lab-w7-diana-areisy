@@ -16,12 +16,13 @@ public class SortOfSort {
             //*Ivan Arenivas helped me understand how to make the sorting
             // go from the back to the front by using modulus.
             if (runTimes % 4 < 2) {
-                int temp = nums[end];
+                int temp = nums[end]; //The following few lanes switch the integers to their right position.
                 nums[end] = nums[maxIndex];
                 nums[maxIndex] = temp;
                 end--;
                 runTimes++;
-            } else {
+            }
+            else {
                 int temp = nums[start];
                 nums[start] = nums[maxIndex];
                 nums[maxIndex] = temp;
